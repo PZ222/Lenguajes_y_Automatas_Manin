@@ -1,0 +1,105 @@
+Transcripcion Chidota
+
+como contenido de nuestra presentación tenemos las palabras claves la introducción el
+contexto de la compañía es la detección del problema el propósito de la simulación
+que la análisis del sistema las variables interés y complementarias la método de
+cosbo el modelo preliminar el software de simulación el diagrama de flujo de la
+metodología la aplicación de la metodología el ajuste de datos la implementación del modelo de
+cómputo la validación la experimentación la interpretación y la documentación y las fuentes
+consultadas
+como palabras claves tenemos la simulación el sistema la variable el modelo la línea
+de espera la media en sigma empleado optimización varianza es desviación estándar uniforme exponencial
+como introducción
+sabemos que la industria de la comida rápida es uno de los negocios más competitivos y
+dinámicos para mantenerse la alza en las tendencias y en el crecimiento de las demandas de los
+clientes los restaurantes de comida rápida deben implementar estrategias innovadoras y efectivas
+en el manejo de estas operaciones en este contexto los sistemas de simulación aparecen
+como una herramienta esencial para optimizar las operaciones en los restaurantes de comida rápida
+llegamos al punto del contexto de nuestra compañía y nuestra compañía se llama Che-Alitas localizado
+en el municipio de tizayuca en donde ellos se dedican a la preparación de varios platillos
+de comida rápida
+la locación están las siguientes fotos y podemos ver el establecimiento
+y bueno para la detección es nuestro problema debido a la alta demanda que recibe y al escaso
+personal disponible la capacidad de producción se ve excedida el proceso de producción no tiene
+una metodología de trabajo correcta aquí nos llevó esto a abrir a realizar un diagrama de
+ishikawa en donde analizamos los diferentes causas para llegar a un problema mayor estas causas
+son el ambiente la demanda los recursos humanos la tecnología la metodología de trabajo y la gestión
+y organización dentro de estos puntos en el ambiente debido al diseño del restaurante
+después llegamos al problema principal que son
+problemas en para reducir la línea de espera en el restaurante y así llegamos al propósito de
+nuestra simulación el cual es optimizar la gestión de los clientes la gestión de la demanda
+de los clientes en el restaurante suena fácil pero no y bueno como analizamos
+nuestro sistema encontramos entidades el establecimiento los empleados o el staff y los
+clientes como atributos tenemos la capacidad de producción los tiempos espera le eficiencia en
+el proceso de producción la comunicación interna y el cambio el rol de turno de los empleados
+como eventos tenemos un pico de demanda una gestión de órdenes el cambio de turno de los empleados
+y el tiempo de servicio de igual forma tenemos como locaciones las áreas de trabajo las áreas
+de toma de orden la caja registradora y el whatsapp y como recursos pues
+tenemos nuestros recursos humanos los empleados
+y bueno nuestras variables de interés y complementar y estas se dividen así porque
+nos interesan y las variables complementares fueron
+las que fueron saliendo de acuerdo a lo que estuvimos investigando esa las vamos a dejar a
+de lado y vamos a centramos con las variables de interés las cuales son la eficiencia en el servicio
+de los empleados el staff el promedio del tiempo de espera en la cola el promedio de tiempo
+del servicio por cliente y y las variables de interés y la eficiencia del uso de los recursos
+disponibles y la eficiencia de las estrategias para para reducir las colas las espera
+y bueno ya con esto podemos sacar nuestras variables claves que como x1 nuestro primera variable sería
+el número de personal disponible como x2 la eficiencia del proceso de producción y x3 la
+capacidad del establecimiento
+aquí tenemos la metodología de cosbo en donde se define el problema se formula el
+modelo se recolecta a los datos se hace la implementación del modelo en computadora se valida y se
+experimenta para para lograr esto tenemos que realizar un modelo
+preliminar lo burdo de este modelo es para basarnos en un modelo más formulado un diagrama de
+flujo que está continuación aquí tenemos en general lo que se debe de poner toma de órdenes el
+pago de órdenes la preparación de la comida la entrega de la comida
+el clientes que esperan sus órdenes en la caja y el estaf de la cocina que recibe el a orden para
+prepararla los clientes que pagan por su orden en la caja y la comida que se entrega al cliente
+para que se toma en la caja después de una colección de encajas
+el modelo de simulación en el software de simulación que vamos a usar es el
+flexión y aquí está nuestro diagrama de flujo ahora hecho a partir de nuestro modelo preliminar
+que empieza desde que el cliente llega verifica si la cola está vacía y va a la caja si no está
+vacía si no se queda ahí esperando se toma la orden se paga la orden se prepara la orden se
+entrega la orden si el cliente necesita algo más se toma otra orden sino el cliente se va y
+termina el proceso
+una vez realizado esto tenemos ya nuestro diagrama de flujo de nuestra metodología anteriormente ya
+habíamos puesto los pasos pero aquí se pone más en hechos como definición de nuestro sistema y
+realizamos el diagrama ishikawa realizamos también hojas observaciones y esto para toda la
+definición la formulación del modelo es elegir nuestra metodología y nuestro software de
+simulación y este y más cosas he demostrado recolección de datos parte desde nuestros
+bajas de observaciones y se toman los datos necesarios a partir de nuestras variables clave y
+variables de interés continuamos con la implementación del modelo y en flexión la validación la
+experimentación la interpretación y la documentación de estas vamos a hablar más a fonda
+continuación
+bueno aquí tenemos más o menos la aplicación de la metodología y definición de sistema que
+durante este paso conocemos el sistema por medio de observaciones se edifican los problemas
+se jerarquizan en un diagrama de ishikawa se identifican los elementos de los sistemas se definen
+las variables interés y complementarias y variables para los variables de interés y complementarias
+del problema que es lo que hicimos al principio de la presentación después sigue la formulación
+del modelo durante este punto la metodología define variables dependientes e independientes
+escogemos la metodología de simulación hacemos el modelo preliminar en un diagrama de procesos
+y el diagrama de la simulación en un diagrama de flujo escogemos también el software de simulación
+como siguiente punto tenemos nuestro ajuste de datos que las tablas que se muestran la continuación
+muestran el tiempo de llegada los tiempos de espera y los tiempos de entregue los cuales se ajustaron los datos en el EasyFit y en StatFit
+aquí tenemos un tabla comparativa los resultados que nos dio en EasyFit y en StatFit
+con una distribución normal y con una distribución informe y con el siguiente paso
+de nuestra metodología implementamos el modelo en computadora para este punto debemos
+adaptar nuestro modelo hecho en el diagrama de flujo y en el de procesos al software de
+flexim configuramos los elementos del modelo y corremos la simulación de igual forma
+recolectamos los datos que tenemos de ahí y aquí podemos ver los datos que nos salieron
+de nuestra distribución normal y entonces nuestra distribución informe varía muy poco pero
+vemos que hay una una pérdida del 35% y esto como lo checamos pues con la validación
+es la comparación de los tiempos de espera actuales y los simulados para
+una orden aquí se toman en tiempo real los datos y los tomamos de nuestros cosas de observación
+y podemos ver que su rank or ronda es los 25 hasta los 37 minutos de tiempo de espera
+para una orden mientras que nuestros datos simulados no varían mucho salvo por algunas
+excepciones pero más o menos se mantienen como por el 25 26 27 seguiendo con el paso
+del experimentación para este punto debemos proponer dos propuestas de mejora y aquí
+la primera propuestas para implementar una caja registradora adicional
+para optimizar el servicio y nuestra segunda propuesta es implementar dos cajas en filas
+de caja registradora el primero es un empleado de caja registradora y en el segundo
+son dos empleados para optimizar el servicio lo siguiente que debemos hacer es pasar
+las propuestas al modelo de flexim, correr los datos, correr las simulaciones y obtener
+los datos aquí podemos ver en cada nuevo modelo de restaurante la distribución se mantiene
+pero se añaden dos empleados o uno dependiendo de cada propuesta de mejora a las cajas
+registradoras y aquí tenemos los datos más en pantalla vemos el tiempo de mejora que
+anteriormente como nada más había uno solo podía tener 13 en nuestra primera propuesta.
