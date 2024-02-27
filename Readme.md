@@ -26,3 +26,8 @@ Mi programa de radio esta disponible en Spotify y se transmite casi todos los sa
 En Twitch me puedes encontrar como:
 
 - Manin_OF
+
+## Mi Novela Grafica
+
+Actualmente me encuentro trabajando en una novela grafica, la cual estare publicando en un proximo blog, les estare confirmando los detalles, pero apenas me encuentro en el tomo 6 y la historia pinta muy bien, avanzo un tomo cada semestre, asi que esto ira para largo
+
