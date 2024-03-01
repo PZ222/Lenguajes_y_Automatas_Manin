@@ -16,16 +16,22 @@ Aqui se **publicaran** trabajos como:
 Mi hobbie es subir videos a Youtube, subo gameplays y videos relacionados a los videojuegos puedes visitarlo y me encuentras como:
 
 - P.Z 222
+- [Aqui Puedes Verme](https://www.youtube.com/@PZ222)
+
+Trabaje en un video por mas de dos años, si lo puedes ver y apoyar estare muy agradecido ^^
+- [Aqui Puedes verlo](https://youtu.be/nX83JyY0ZIA)
 
 ## Mi Programa de Radio
 
 Mi programa de radio esta disponible en Spotify y se transmite casi todos los sabados en Twitch, lo puedes encontrar en Spotify como:
 
 - Hablando con Manin
+- [Aqui Puedes Escucharme](https://open.spotify.com/show/2EEsLAbCK6ZsC63sjSMrbT)
 
 En Twitch me puedes encontrar como:
 
 - Manin_OF
+- [Aqui Puedes Verme](https://open.spotify.com/show/2EEsLAbCK6ZsC63sjSMrbT)
 
 ## Mi Novela Grafica
 
