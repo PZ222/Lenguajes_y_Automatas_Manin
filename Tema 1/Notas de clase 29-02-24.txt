@@ -1,0 +1,129 @@
+Clase 29/0224
+
+Cerradura Kleene L^*
+SIEMPRE INICIA EN POTENCIA CERO
+x^*= {Epsylon, x, xx, xxx, … }
+
+x^0= Epsylon
+
+x^1= x
+
+X^2=xx
+
+x^3=xxx
+
+**Ejemplo**
+
+RS^*={R, RS, RSS, RSSS, …}
+
+**EJEMPLO 2**
+
+(XY)^*= {EPSYLON, XY, XYXY, XYXYXY, … }
+
+
+Cerradura Positiva L^+
+
+X^+= {X, XX, XXX, … }
+SIEMPRE INICIA EN POTENCIA UNO
+
+**EJEMPLO**
+
+ABC^+ = {ABC, ABCC, ABCCC, … }
+EL QUE AFECTA + SE REPITE
+
+**EJEMPLO**
+
+(XY)^+(RS)^+ = {XYRS, XYXYRS, XYXYXYRS, …
+		      XYRSRS, XYXYRSRS, XYXYXYRSRSRS}
+		
+**EJEMPLO**
+
+X^X (YZ)^+ = {YZ, XYZ, XXYZ, XXXYZ, 
+		 YZYZ, XYZYZ, XXYZYZ, 
+	         YZYZYZ,XYZYZYZ,XXYZYZYZ}
+	
+**EJEMPLO**
+
+(AB)^+ C^X D = {ABD,ABCD,ABABCD,
+		   ABDABD, ABCCD, ABABCCD
+		ABABABD, AB} 
+
+**RESULTADO**
+
+(AB)^+ C^X D = {ABD,ABABD,ABABABD, …
+		     ABCD,ABABCD,ABABABCD, …
+		   ABCCD,ABABCCD,ABABABCCD, …
+		
+		
+**EJERCICIO**
+
+Sean los alfabetos A = {Ψηλ} y B = {∅,λ,θ}
+
+AUB = {Ψ,η,λ,∅,λ,θ}
+AΠB = {λ}
+A∅B = {Ψ,η,∅,θ}
+A-B = {Ψ,η}
+B-A = {∅,θ}
+
+**EJERCICIO**
+ W= PINO
+
+PREFIJO
+X^0=EPSYLON	X^1=P	X^2=I	X^3=PIN	X^4
+SUFIJO
+X^0=EPSYLON	X^1=O	X^2=ON	X^3=ONI	X^4
+
+SUBCADENA
+X^0=EPSYLON
+X^1=P
+X^2=I
+X^3=N
+X^4=0
+--------
+X^5=PI
+X^6=IN
+X^7=NO
+--------
+X^8=PIN
+X^9=INO
+--------
+
+**EJERCICIO**
+ 
+W= PAPA
+
+W^2=PAPAPAPA
+
+W^3=PAPAPAPAPAPA
+
+W^R=APAP
+
+**EJERCICIO**
+
+X = PIÑATA
+PREFIJO
+X^0=EPSYLON	X^1=P	X^2=PI	X^3=PIÑ	X^4=PIÑA	X^5=PIÑAT
+
+Y = MAROMA
+PREFIJO
+X^0=EPSYLON	X^1=M	X^2=MA	X^3=MAR	X^4=MARO	X^5=MAROM
+
+Z = BANANA
+PREFIJO
+X^0=EPSYLON	X^1=B	X^2=BA	X^3=BAN	X^4=BANA	X^5=BANAN
+
+**EJERCICIO**
+
+X, Y^R, Z = PIÑATA AMORAM BANANA
+
+Z^2 X = BANANABANANA PIÑATA
+
+**EJERCICIO**
+
+A = {A,B,C} Y B = {C,D,E}
+
+(A U B^2) = {A, B, C, CC, DC, EC, CD, DD, ED, CE, DE, EE}
+
+(AB)^* = {EPSYLON, AC, AD, AE, BC, BD, BE, CC, CD, CE, ACAC, ACAD, …}
+
+(BA)^R = {AC, AD. AE, BC, BD, BE, CC, CD, CE}
