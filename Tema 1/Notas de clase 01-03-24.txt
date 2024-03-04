@@ -1,0 +1,27 @@
+---------------------------------------------------------------------------
+Clase 01/03/24
+---------------------------------------------------------------------------
+
+(A U B^2) = {A, B, C, CC, DC, EC, CD, DD, ED, CE, DE, EE}
+		{{{{A,B,C,CC,CD,CE,DC,DD,DE,EC,ED,EE}}}} SOLUCION DE CLASE
+
+**EJERCICIO**
+
+R^*(MN)^+ S = {MNS, MNMNS, MNMNMNS, …
+		   RMNS, RMNMNS,RMNMNMNS,…}
+		
+		= {MNS,RMNS,RRMNS, …
+		  MNMNS,RMNMNS,RRMNMNS, …
+		MNMNMNS,RMNMNMNS,RRMNMNMNS, …}
+		
+ABCD^+ = {ABCD, ABCDD, ABCDDD, ABCDDDD, …}
+
+(MN)^* X (RS)^+ = {XRS, MNXRS, MNMNXRS,…
+			XRSRS,MNXRSRS, MNMNXRSRS, …
+		        XRSRSRS,MNSXRSRSR,MNMNXRSRSR, …}
+		//Es válido ponerlo así
+		= {XRS, MNXRS, MNMNXRS,…
+		(RS)^2,MNX(RS)^2, (MN)^2X(RS)^2, …
+	       (RS)^3,MNSX(RS)^3,MNMNX(RS)^3, …}
+	
+A^* (BC)^* = { , ABC, (A)^2(BC)^2, (A)^3(BC)^3}
