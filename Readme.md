@@ -7,7 +7,7 @@ Hola soy Jorge Rafael Garcia Sandoval, mi numero de control es 21200601 y me con
 Aqui se **publicaran** trabajos como:
 
 - Trabajos
-- Pruebas que vemos en clase
+- Notas de lo que vemos en clase
 - Tareas
 
 
