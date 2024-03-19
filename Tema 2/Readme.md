@@ -1,28 +1,38 @@
-# Hola.
+# Nota de Clase 15/03/24
 
-Hola soy Jorge Rafael Garcia Sandoval, mi numero de control es 21200601 y me conocen como **Manin**
+**Orden de precedencia**
 
-## Bienvenido a mi Repositorio de Github!
+-   Cerradura Kleene
+-   Concatenación
+-   Unión.
 
-Aqui se **publicaran** trabajos como:
+## Ejemplo
+w= a^*b U c
 
-- Trabajos
-- Pruebas que vemos en clase
-- Tareas
+## Cerradura Kleene
 
+| w= a^* |ε 					|	aa									  |	aaa									 |	aaaa|
+|----|----|----|-----|----|
 
-## Mi Canal de YT
+## Concatenación 
 
-Mi hobbie es subir videos a Youtube, subo gameplays y videos relacionados a los videojuegos puedes visitarlo y me encuentras como:
+| w= a^*b | {b, ab, aab, aaab, …} |
+|----|----|
+## Unión
 
-- P.Z 222
+| w= a^*b U c | {b, c, ab, aab, aaab, …}
+|-----|------|
+## Ejemplo 2
+Z={0,1}
 
-## Mi Programa de Radio
+Z={0,1,00,11,010,0101,1100}
 
-Mi programa de radio esta disponible en Spotify y se transmite casi todos los sabados en Twitch, lo puedes encontrar en Spotify como:
+Una expresión regular que incluya dos ceros
 
-- Hablando con Manin
+L=1^*0 1^* 0 1^*
 
-En Twitch me puedes encontrar como:
+Expresión Regular = Sufijo 110
 
-- Manin_OF
+L=(0 U 1)^* 110
+
+> **Nota:** Otros ejemplos están en libreta.
