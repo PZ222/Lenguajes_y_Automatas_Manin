@@ -14,6 +14,8 @@ Ahora que comprendo mejor como son las expresiones regulares en la practica.
 Tenia la idea de lo que respondería el Bot pero no sabia como implementarlo, ahora que ya se como se manejan las regex (usare **regex** para simplificar expresiones regulares) puedo implementarlo
 lo primero fue prueba y error.
 implementar una nueva regex que me saliera inmediatamente después de la primera respuesta del usuario
+
+Se lo comparti a un compañero y me comento de varios errores
 `Estuve con puro error todo el dia, pero aprendi en lo que estaba mal`
 
 # Nota de Practica 12/04/24
