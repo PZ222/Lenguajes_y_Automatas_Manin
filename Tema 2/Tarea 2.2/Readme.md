@@ -16,22 +16,27 @@ lo primero fue prueba y error.
 implementar una nueva regex que me saliera inmediatamente después de la primera respuesta del usuario
 
 Se lo comparti a un compañero y me comento de varios errores
+
 `Estuve con puro error todo el dia, pero aprendi en lo que estaba mal`
 
 # Nota de Practica 12/04/24
 
 **Modificación del Bot**
 Ingreso las primeras dos regex que usare y que funcionaron bien, hasta cierto punto.
->expresion_regular_estado = re.compile(r"bien|mal|mas o menos|Bien|Mal|Chidote|Buenardo", re.IGNORECASE)
 
->expresion_regular_despedida = re.compile(r"gracias|muchas gracias|adios|chido", re.IGNORECASE)l
+    expresion_regular_estado = re.compile(r"bien|mal|mas o menos|Bien|Mal|Chidote|Buenardo", re.IGNORECASE)
+
+    expresion_regular_despedida = re.compile(r"gracias|muchas gracias|adios|chido", re.IGNORECASE)l
+
+Se lo comparti a un compañero y me comento de varios errores
 
 Funcionaban con bien, mal, mas o menos, pero con lo demás no, seguiré comprobando
 **Actualización del Bot**
 Quite algunas respuestas, que no me parecieron (no me gustaron)
->expresion_regular_estado = re.compile(r"bien|mal|mas o menos", re.IGNORECASE)
 
->expresion_regular_despedida = re.compile(r"gracias|muchas gracias|adios", re.IGNORECASE)
+    expresion_regular_estado = re.compile(r"bien|mal|mas o menos", re.IGNORECASE)
+
+    expresion_regular_despedida = re.compile(r"gracias|muchas gracias|adios", re.IGNORECASE)
 
 así ya funciona normalmente, me gusto el resultado, pero quiero seguir mejorándolo.
 **nota** `No adjunto captura, por que se me olvido tomarlas, pero siempre borraba el chat con el bot entre cada nueva prueba, seria imposible ponerlas todas`
@@ -40,9 +45,14 @@ así ya funciona normalmente, me gusto el resultado, pero quiero seguir mejorán
 **Modificación del Bot**
 agrego una nueva regex, tomando en cuenta la ultima clase en la que trabajos, un correo electrónico, lo valida perfectamente **creo** 
 
->expresion_regular_correo = re.compile(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+")
+    expresion_regular_correo = re.compile(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+")
 
 **nota** `No adjunto captura, por que se me olvido tomarlas, pero siempre borraba el chat con el bot entre cada nueva prueba, seria imposible ponerlas todas`
+
+Modifique una expresion y agregue otra 
+
+    expresion_regular_gracias = re.compile(r"gracias|muchas gracias", re.IGNORECASE)
+    expresion_regular_despedida = re.compile(r"adios", re.IGNORECASE) 
 
  ya quedo listo el Bot, me gusta el resultado, pero puede quedar mejor mañana, a mimir.
 
