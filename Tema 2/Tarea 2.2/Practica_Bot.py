@@ -11,8 +11,9 @@ logger = logging.getLogger(__name__)
 
 # Expresiones regulares para detectar mensajes
 expresion_regular_hola = re.compile(r"hello|hi|hey|hola", re.IGNORECASE)
-expresion_regular_estado = re.compile(r"bien|mal|mas o menos|Bien|Mal|Chidote|Buenardo", re.IGNORECASE)
-expresion_regular_despedida = re.compile(r"gracias|muchas gracias|adios|chido", re.IGNORECASE)
+expresion_regular_estado = re.compile(r"bien|mal|mas o menos", re.IGNORECASE)
+expresion_regular_despedida = re.compile(r"gracias|muchas gracias|adios", re.IGNORECASE)
+expresion_regular_correo = re.compile(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Send a message when the command /start is issued."""
@@ -39,7 +40,9 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         elif "mas o menos" in message_text:
             await update.message.reply_text("Manin no entiende, decide si bien o mal, pq asi no te puedo aconsejar :(")
     elif expresion_regular_despedida.search(message_text):
-        await update.message.reply_text("¡Espero que todo vaya bien para ti! Te deseo lo mejor chams")
+        await update.message.reply_text("¿Podrías proporcionarme tu correo para afiliarte al partido politico de Manin?")
+    elif expresion_regular_correo.search(message_text):
+        await update.message.reply_text("¡Muchas gracias chams! El equipo de logistica de Manin ha recibido tu correo electrónico. ¡Espero que todo vaya bien para ti! Te deseo lo mejor chams.")
     else:
         await update.message.reply_text("No entendí tu mensaje.")
 
@@ -55,3 +58,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
