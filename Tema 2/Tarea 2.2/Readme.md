@@ -51,4 +51,5 @@ Me levante inspirado, modifique todas las respuestas, ahora es mas fácil hablar
 Ya esta documentado y listo para enviar.
 
 adjunto capturas del Bot
+
 ![WhatsApp Image 2024-04-14 at 8 18 39 PM](https://github.com/PZ222/Lenguajes_y_Automatas_Manin/assets/103959963/7d44ed9f-386c-4e87-966a-ac6b2b0aaaee)
