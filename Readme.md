@@ -23,7 +23,7 @@ Trabaje en un video por mas de dos años, si lo puedes ver y apoyar estare muy a
 
 ## Mi Programa de Radio
 
-Mi programa de radio esta disponible en Spotify y se transmite casi todos los sabados en Twitch, lo puedes encontrar en Spotify como:
+Mi programa de radio esta disponible en Spotify y se transmite casi todos los sabados en Twitch (ME CENSURARON), lo puedes encontrar en Spotify como:
 
 - Hablando con Manin
 - [Aqui Puedes Escucharme](https://open.spotify.com/show/2EEsLAbCK6ZsC63sjSMrbT)
