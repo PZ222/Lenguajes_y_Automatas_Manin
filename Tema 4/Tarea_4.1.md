@@ -35,7 +35,7 @@ Lenguaje de los Manines
 | Asignaciones     | =                                                          |
 | Valor            | 0-9                                                                    |
 | Operadores       | + (suma), - (resta), * (multiplicación), / (división)                  |
-| Símbolos Especiales | (, ), {, }, ;                                                          |
+| Símbolos Especiales | (, ), {, }, ;, "                                                          |
 | Comentarios      | // (comentario de una línea), /* ... */ (comentario de varias líneas)  |
 
 
