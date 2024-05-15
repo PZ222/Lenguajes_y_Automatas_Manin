@@ -44,3 +44,7 @@
 	- **Prueba de valores**: se puede probar con “0”, “1”, “19”, “123”. 
     
 	- **Prueba de cadenas de texto**: se puede probar con “"Hola, manines"”, “"Todo es real"”.
+
+# Equipo
+- Jorge Rafael Garcia Sandoval
+- Juan de Dios Benitez Nava
