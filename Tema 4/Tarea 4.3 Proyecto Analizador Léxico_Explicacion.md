@@ -220,5 +220,5 @@ Lo que nos imprime es lo siguiente:
 
 # Equipo
 
-- Jorge Rafael Garcia Sandoval
-- Juan de Dios Benitez Nava
+![Integrantes](https://github.com/PZ222/Lenguajes_y_Automatas_Manin/assets/103959963/a74425c9-9d86-499d-9228-402ce0a49509)
+
