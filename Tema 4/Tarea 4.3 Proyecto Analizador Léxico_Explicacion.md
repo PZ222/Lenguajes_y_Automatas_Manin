@@ -1,4 +1,4 @@
-# Tarea 4.3 Tarea 4.3 Proyecto Analizador Léxico
+# Tarea 4.3 Proyecto Analizador Léxico
 
 
 ## Introducción
