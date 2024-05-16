@@ -36,7 +36,6 @@ def handle_token(match):
 # 6. Manejo de errores
 # El manejo de errores se realiza en la función handle_token.
 
-
 def lexer(input):
     return filter(None, map(handle_token, re.finditer(regex, input, re.MULTILINE)))
 
@@ -52,5 +51,7 @@ Excepcion
 """
 
 # Prueba del analizador léxico
+print("Tokens reconocidos:")
 for token in lexer(codigo_prueba):
-    print(token)
+    print(f"Tipo: {token[0]}, Valor: {token[1]}")
+
