@@ -4,7 +4,7 @@
 ## Introducción
 Los analizadores léxicos, también conocidos como scanners, son herramientas esenciales en el campo de la compilación y la interpretación de lenguajes de programación. Su función principal es tomar una secuencia de caracteres de entrada y transformarla en una secuencia de tokens, que son las unidades lógicas y semánticas del lenguaje.
 
-En el caso del analizador léxico que hemos desarrollado, este se encarga de evaluar un lexema específico, que hemos denominado “codigo_prueba” Haciendo referencia a nuestro lenguaje de los Manines previamente definido en la Tarea 4.1. La función principal, lexer, toma esta cadena de entrada y, mediante la aplicación de una serie de reglas y patrones definidos previamente, es capaz de identificar y devolver una secuencia de tokens. Cada token reconocido en la entrada es clasificado y procesado, proporcionando una representación más estructurada y manejable del código fuente original.
+En el caso del analizador léxico que hemos desarrollado, este se encarga de evaluar un lexema específico, que hemos denominado “codigo_prueba”. La función principal, lexer, toma esta cadena de entrada y, mediante la aplicación de una serie de reglas y patrones definidos previamente, es capaz de identificar y devolver una secuencia de tokens. Cada token reconocido en la entrada es clasificado y procesado, proporcionando una representación más estructurada y manejable del código fuente original.
 
 Esta representación facilita las etapas posteriores del proceso de compilación o interpretación, permitiendo un análisis más profundo del código y su eventual transformación en código máquina o la ejecución directa, según sea el caso
   
