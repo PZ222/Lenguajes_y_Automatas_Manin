@@ -11,6 +11,7 @@
 | Operadores       | + (suma), - (resta), * (multiplicación), / (división)                  |
 | Símbolos Especiales | (, ), {, }, ;                                                          |
 | Comentarios      | // (comentario de una línea), /* ... */ (comentario de varias líneas)  |
+| Cadena de Texto  | ","                                                                    |
 
 2.  **Escribir las reglas de coincidencia**: Para cada token en nuestra tabla, necesitamos escribir una regla de coincidencia que defina cómo se reconoce ese token en el texto de entrada:
     
