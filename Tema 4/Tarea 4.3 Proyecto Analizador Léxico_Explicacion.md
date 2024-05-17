@@ -10,6 +10,7 @@ Esta representación facilita las etapas posteriores del proceso de compilación
   
 
     import  re
+    
       
     
     # 1. Definición de tokens
@@ -32,7 +33,7 @@ Esta representación facilita las etapas posteriores del proceso de compilación
     
     'CADENA': r'\".*?\"',
     
-    'COMENTARIO': r'//.*',
+    'COMENTARIO': r'~.*',
     
     'ESPACIO': r'\s+',
     
@@ -94,7 +95,7 @@ Esta representación facilita las etapas posteriores del proceso de compilación
     
     print(f'Error: Carácter desconocido {token_value!r}')
     
-    else:
+    elif  token_type != 'COMENTARIO': # No imprimimos los comentarios
     
     return  token_type, token_value
     
@@ -108,6 +109,10 @@ Esta representación facilita las etapas posteriores del proceso de compilación
     
     # Cuando se reconoce un token de tipo 'ERROR', la función handle_token imprime un mensaje de error.
     
+    # Aunque nos hubiera gustado agregar el manejo de accion del numero negativo, notamos que era mas complejo de lo creimos
+    
+    # Nuestro manejo de acciones que reconoce las cadenas ya estaba implementado
+    
       
       
     
@@ -115,7 +120,7 @@ Esta representación facilita las etapas posteriores del proceso de compilación
     
     # Toma un texto de entrada y devuelve una lista de tokens reconocidos en ese texto.
     
-    def  lexer(input):
+    def  Entrada(input):
     
     return  filter(None, map(handle_token, re.finditer(regex, input, re.MULTILINE)))
     
@@ -129,11 +134,13 @@ Esta representación facilita las etapas posteriores del proceso de compilación
     
     # Aquí tenemos un código de prueba que vamos a analizar.
     
-    codigo_prueba = """
+    codigo_prueba = """~Manitas
     
     Define a = 5
     
     Define b = 7
+    
+    ¿
     
     Prueba
     
@@ -153,38 +160,41 @@ Esta representación facilita las etapas posteriores del proceso de compilación
     
     print("Tokens reconocidos:")
     
-    for  token  in  lexer(codigo_prueba):
+    for  token  in  Entrada(codigo_prueba):
     
     print(f"Tipo: {token[0]}, Valor: {token[1]}")
 
 Lo que nos imprime es lo siguiente:
 
-    Tokens reconocidos:
-    Tipo: ESPACIO, Valor: 
+        Tokens reconocidos:
+    Tipo: ESPACIO, Valor:
     
     Tipo: PALABRA_CLAVE, Valor: Define
-    Tipo: ESPACIO, Valor:  
+    Tipo: ESPACIO, Valor:
     Tipo: IDENTIFICADOR, Valor: a
-    Tipo: ESPACIO, Valor:  
+    Tipo: ESPACIO, Valor:
     Tipo: ASIGNACION, Valor: =
-    Tipo: ESPACIO, Valor:  
+    Tipo: ESPACIO, Valor:
     Tipo: VALOR, Valor: 5
-    Tipo: ESPACIO, Valor: 
+    Tipo: ESPACIO, Valor:
     
     Tipo: PALABRA_CLAVE, Valor: Define
-    Tipo: ESPACIO, Valor:  
+    Tipo: ESPACIO, Valor:
     Tipo: IDENTIFICADOR, Valor: b
-    Tipo: ESPACIO, Valor:  
+    Tipo: ESPACIO, Valor:
     Tipo: ASIGNACION, Valor: =
-    Tipo: ESPACIO, Valor:  
+    Tipo: ESPACIO, Valor:
     Tipo: VALOR, Valor: 7
-    Tipo: ESPACIO, Valor: 
+    Tipo: ESPACIO, Valor:
+    
+    Error: Carácter desconocido '¿'
+    Tipo: ESPACIO, Valor:
     
     Tipo: PALABRA_CLAVE, Valor: Prueba
-    Tipo: ESPACIO, Valor: 
-        
+    Tipo: ESPACIO, Valor:
+    
     Tipo: PALABRA_CLAVE, Valor: Define
-    Tipo: ESPACIO, Valor:  
+    Tipo: ESPACIO, Valor:
     Tipo: IDENTIFICADOR, Valor: resultado
     Tipo: ESPACIO, Valor:
     Tipo: ASIGNACION, Valor: =
