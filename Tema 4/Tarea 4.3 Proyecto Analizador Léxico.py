@@ -10,7 +10,7 @@ TOKENS = {
     'ASIGNACION': r'=',
     'VALOR': r'\d+',
     'CADENA': r'\".*?\"',
-    'COMENTARIO': r'//.*',
+    'COMENTARIO': r'~.*',
     'ESPACIO': r'\s+',
     'SIMBOLOS_ESPECIALES': r'\(|\)|\{|\}|;',
     'ERROR': r'.'
@@ -41,18 +41,20 @@ def handle_token(match):
     token_value = match.group(token_type)
     if token_type == 'ERROR':
         print(f'Error: Carácter desconocido {token_value!r}')
-    else:
+    elif token_type != 'COMENTARIO':  # No imprimimos los comentarios
         return token_type, token_value
 
 # 6. Manejo de errores
 # Cómo vamos a manejar los errores que puedan ocurrir durante el análisis léxico?
 # El manejo de errores se realiza en la función handle_token.
 # Cuando se reconoce un token de tipo 'ERROR', la función handle_token imprime un mensaje de error.
+# Aunque nos hubiera gustado agregar el manejo de accion del numero negativo, notamos que era mas complejo de lo creimos
+# Nuestro manejo de acciones que reconoce las cadenas ya estaba implementado
 
 
 # Esta es la función principal del analizador léxico.
 # Toma un texto de entrada y devuelve una lista de tokens reconocidos en ese texto.
-def lexer(input):
+def Entrada(input):
     return filter(None, map(handle_token, re.finditer(regex, input, re.MULTILINE)))
 # Esta parte del código se refiere a la función principal del analizador léxico que vamos a utilizar para analizar el texto de entrada.
 
@@ -60,9 +62,10 @@ def lexer(input):
 
 # Prueba del analizador léxico
 # Aquí tenemos un código de prueba que vamos a analizar.
-codigo_prueba = """
+codigo_prueba = """~Manitas
 Define a = 5
 Define b = 7
+¿
 Prueba
     Define resultado = a + b
     Imprime ("El resultado de la suma es: ") + resultado
@@ -72,6 +75,7 @@ Excepcion
 
 # Aquí estamos ejecutando el analizador léxico en el código de prueba y imprimiendo los tokens reconocidos.
 print("Tokens reconocidos:")
-for token in lexer(codigo_prueba):
+for token in Entrada(codigo_prueba):
     print(f"Tipo: {token[0]}, Valor: {token[1]}")
+
 
