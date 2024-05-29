@@ -51,3 +51,9 @@
     -   Operadores multiplicativos (`*`,  `/`): mayor precedencia, asociatividad izquierda.
     -   Operadores aditivos (`+`,  `-`): menor precedencia, asociatividad izquierda.
     -   Operadores de asignación (`=`): menor precedencia, asociatividad derecha.
+
+7.  **Comentarios y Anotaciones**
+    No le entendimos c:
+
+![Integrantes](https://github.com/PZ222/Lenguajes_y_Automatas_Manin/assets/103959963/367b85dd-5b68-4ce0-836f-a7156f4b845a)
+
