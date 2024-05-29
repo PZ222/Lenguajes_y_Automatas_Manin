@@ -37,7 +37,6 @@
     E -> E + T | E - T | T
     T -> T * F | T / F | F
     F -> ( E ) | id | num
-    
     ```
     
 5.  **Símbolo Inicial**
