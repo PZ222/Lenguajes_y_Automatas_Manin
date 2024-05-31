@@ -396,3 +396,5 @@ Con algún error de gramática
     
     Error de sintaxis: Se esperaba Se esperaba una palabra clave pero se encontró ('IDENTIFICADOR', 'a'). Historia de tokens esperados: []
 
+
+![Integrantes](https://github.com/PZ222/Lenguajes_y_Automatas_Manin/assets/103959963/8bd82512-3cbd-46a9-a8a5-4735d016322c)
